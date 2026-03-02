@@ -2,7 +2,7 @@ import Container from "../../components/layout/Container";
 
 const Hero = () => {
   return (
-    <section className="py-24 text-center bg-gradient-to-b from-gray-50 to-white dark:from-black dark:to-gray-900 transition-colors duration-500">
+    <section className="py-24 text-center bg-linear-to-b from-gray-50 to-white dark:from-black dark:to-gray-900 transition-colors duration-500">
       <Container>
         <h1 className="text-5xl font-extrabold mb-6 tracking-tight">
           UI Experiments Lab

@@ -3,7 +3,7 @@ import SectionTitle from "../../components/ui/SectionTitle";
 
 const ProgressSection = () => {
   return (
-    <section id="progress" className="py-24 bg-white dark:bg-gray-950 transition-colors duration-500">
+    <section id="progress" className="scroll-mt-24 py-24 bg-white dark:bg-gray-950 transition-colors duration-500">
       <Container>
         <SectionTitle
           title="Progress Over Perfection"

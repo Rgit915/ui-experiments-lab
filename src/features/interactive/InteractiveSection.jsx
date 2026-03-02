@@ -3,7 +3,7 @@ import SectionTitle from "../../components/ui/SectionTitle";
 
 const InteractiveSection = () => {
   return (
-    <section id="interactive" className="py-24 bg-gray-50 dark:bg-black transition-colors duration-500">
+    <section id="interactive" className="scroll-mt-24 py-24 bg-gray-50 dark:bg-black transition-colors duration-500">
       <Container>
         <SectionTitle
           title="Interactive UI Ideas"

@@ -70,6 +70,30 @@ Instead of building many disconnected mini-projects, this lab centralizes intera
 - Clean anchor navigation
 
 ---
+## 🌸 Spring Playground
+A playful interactive scene filled with small animations and delightful interactions.
+
+**Features**
+- 🌸 Floating petals animation
+- ☁️ Wiggle clouds / ✨ twinkling stars (theme-based)
+- 🌼 Blooming flowers on hover
+- 🥚 Bouncy egg with surprise interaction
+- 🐰 Animated bunny with movement behavior
+
+**Skills Practiced**
+- Animation design & timing
+- State-driven interactions
+- Theme-based UI (light/dark mode)
+- Performance optimization
+
+---
+## 🌙 Theme System
+
+- Light / Dark mode toggle
+- Persistent theme using localStorage
+- Smooth transitions between themes
+
+---
 
 # 🛠 Tech Stack
 
@@ -95,15 +119,39 @@ src/
 │       └── SectionTitle.jsx
 │
 ├── features/
-│   ├── hero/
+│   ├── spring-playground/
+│   │   ├── SpringPlayground.jsx
+│   │   ├── FloatingPetals.jsx
+│   │   ├── BloomFlower.jsx
+│   │   ├── BouncyEgg.jsx
+│   │   ├── BunnyDemo.jsx
+│   │   ├── Meadow.jsx
+│   │   ├── WiggleCloud.jsx
+│   │   └── WiggleStar.jsx
+│   │
+│   ├── interactive/
+│   │   ├── AnimatedCard.jsx
+│   │   └── InteractiveSection.jsx
+│   │
 │   ├── progress/
-│   └── interactive/
+│   │   └── ProgressSession.jsx
+│   │
+│   └── hero/
 │
-└── App.jsx
+├── hooks/
+│   ├── useTheme.js
+│   ├── useIsDark.js
+│   └── usePastelCycle.js
+│
+├── constants/
+│   └── constants.js
+│
+├── styles/
+│   └── index.css
+│
+├── App.jsx
+└── main.jsx
 ```
-
-Structured for scalability and clarity.
-
 ---
 
 # 🧪 How to Run Locally

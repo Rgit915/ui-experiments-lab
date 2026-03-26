@@ -4,7 +4,7 @@ import Hero from "./features/hero/Hero";
 import ProgressSection from "./features/progress/ProgressSection";
 import InteractiveSection from "./features/interactive/InteractiveSection";
 import Footer from "./components/layout/Footer";
-import SpringPlayground from "./features/interactive/SpringPlayground";
+import SpringPlayground from "./features/spring-playground/SpringPlayground";
 function App() {
   return (
     <BrowserRouter>

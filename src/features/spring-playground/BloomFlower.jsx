@@ -1,10 +1,15 @@
 // ─── components/BloomFlower.jsx ───────────────────────────────────────────────
-import { useState, useCallback } from "react";
-import { PETAL_ANGLES } from "../../features/interactive/Constants";
+import { useCallback, useState } from "react";
+import { PETAL_ANGLES } from "../../constants/Constants";
 
-export default function BloomFlower({ style, isDark, swayDuration, droopDuration }) {
+export default function BloomFlower({
+  style,
+  isDark,
+  swayDuration,
+  droopDuration,
+}) {
   const [bloomed, setBloomed] = useState(false);
-  const [petals,  setPetals]  = useState(false);
+  const [petals, setPetals] = useState(false);
 
   const handleHover = useCallback(() => {
     setBloomed(true);
@@ -21,8 +26,12 @@ export default function BloomFlower({ style, isDark, swayDuration, droopDuration
     : `sway ${swayDuration}s ease-in-out infinite`;
 
   const petalClass = petals
-    ? (isDark ? "moon-petal-in" : "petal-in")
-    : bloomed ? "petal-out" : "opacity-0";
+    ? isDark
+      ? "moon-petal-in"
+      : "petal-in"
+    : bloomed
+      ? "petal-out"
+      : "opacity-0";
 
   return (
     <div
@@ -46,7 +55,7 @@ export default function BloomFlower({ style, isDark, swayDuration, droopDuration
           </span>
         ))}
         <span className="text-2xl z-10">
-          {isDark ? (bloomed ? "🌼" : "🌷") : (bloomed ? "🌼" : "🌱")}
+          {isDark ? (bloomed ? "🌼" : "🌷") : bloomed ? "🌼" : "🌱"}
         </span>
       </div>
       <div

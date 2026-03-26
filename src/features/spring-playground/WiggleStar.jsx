@@ -1,6 +1,6 @@
 // ─── components/WiggleStar.jsx ────────────────────────────────────────────────
-import { useState, useCallback } from "react";
-import { STAR_FONT_SIZE } from "../../features/interactive/Constants";
+import { useCallback, useState } from "react";
+import { STAR_FONT_SIZE } from "../../constants/Constants";
 
 export default function WiggleStar({ style, size = "text-2xl" }) {
   const [twinkling, setTwinkling] = useState(false);

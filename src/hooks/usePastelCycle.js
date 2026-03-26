@@ -1,6 +1,6 @@
 // ─── hooks/usePastelCycle.js ──────────────────────────────────────────────────
 import { useEffect, useState } from "react";
-import { LIGHT_PASTELS, DARK_PASTELS } from "../features/interactive/Constants";
+import { DARK_PASTELS, LIGHT_PASTELS } from "../constants/Constants";
 
 export default function usePastelCycle(isDark) {
   const colors = isDark ? DARK_PASTELS : LIGHT_PASTELS;

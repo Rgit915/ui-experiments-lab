@@ -35,7 +35,7 @@ const Footer = () => {
           </p>
 
           <div className="flex justify-center gap-8 mb-10 text-sm font-medium">
-            <a href="#" className="relative group">
+            <a href="https://github.com/Rgit915" className="relative group">
               GitHub
               <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
             </a>

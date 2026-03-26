@@ -26,9 +26,16 @@ const InteractiveSection = () => {
             description="Animated card overlay with smooth scale effects."
             image="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
           />
+          <AnimatedCard
+            title="Spring Playground 🌸"
+            description="Play with blooming flowers, bouncing eggs, twinkling stars, and a curious bunny."
+            image="https://images.unsplash.com/photo-1462275646964-a0e3386b89fa"
+            to="/spring-playground"
+          />
         </div>
       </Container>
     </section>
+
   );
 };
 
